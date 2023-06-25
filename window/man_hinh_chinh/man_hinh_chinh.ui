@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>man_hinh_chinh</class>
+ <widget class="QWidget" name="man_hinh_chinh">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Tahoma</family>
+    <pointsize>12</pointsize>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>-2</number>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QPushButton" name="danh_sach_cau_hoi">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>240</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+background-color: rgb(48, 45, 157);
+	border-radius: 30%
+}</string>
+   </property>
+   <property name="text">
+    <string>Kho câu hỏi</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/Ảnh10.png</normalon>
+    </iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="danh_sach_de_thi">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>170</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+    
+background-color: rgb(48, 45, 157);
+	border-radius: 30%
+}</string>
+   </property>
+   <property name="text">
+    <string>Kho đề thi</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/Ảnh10.png</normalon>
+    </iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bao_cao_nam">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>380</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+background-color: rgb(48, 45, 157);
+	border-radius: 30%
+}</string>
+   </property>
+   <property name="text">
+    <string>Báo cáo năm</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/Ảnh10.png</normalon>
+    </iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="danh_sach_cham_thi">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>310</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	color: rgb(255, 255, 255);
+background-color: rgb(48, 45, 157);
+	border-radius: 30%
+}</string>
+   </property>
+   <property name="text">
+    <string>Chấm thi</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/Ảnh10.png</normalon>
+    </iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>40</y>
+     <width>621</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 30%;
+background-color: rgb(48, 45, 157);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;PHẦN MỀM QUẢN LÍ VIỆC RA ĐỀ VÀ &lt;/p&gt;&lt;p align=&quot;center&quot;&gt;CHẤM THI CHO GIẢNG VIÊN&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dang_xuat">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>460</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Tahoma</family>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(48, 45, 157);
+color: rgb(255, 255, 255);
+border-radius: 30%;</string>
+   </property>
+   <property name="text">
+    <string>Đăng xuất</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normalon>:/images/22_n.png</normalon>
+    </iconset>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>-140</y>
+     <width>800</width>
+     <height>800</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../../resource.qrc">:/images/Hình tròn.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>40</y>
+     <width>121</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="tabletTracking">
+    <bool>false</bool>
+   </property>
+   <property name="acceptDrops">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../../resource.qrc">:/images/trang chủ hình nón.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="openExternalLinks">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>-120</x>
+     <y>319</y>
+     <width>311</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:100%</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../../resource.qrc">:/images/Hình tròn.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>-140</x>
+     <y>500</y>
+     <width>431</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../../resource.qrc">:/images/Ảnh17.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>-210</x>
+     <y>430</y>
+     <width>431</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="../../resource.qrc">:/images/Ảnh17.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>danh_sach_cau_hoi</zorder>
+  <zorder>danh_sach_de_thi</zorder>
+  <zorder>bao_cao_nam</zorder>
+  <zorder>danh_sach_cham_thi</zorder>
+  <zorder>dang_xuat</zorder>
+  <zorder>label</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_6</zorder>
+ </widget>
+ <resources>
+  <include location="../../resource.qrc"/>
+  <include location="../../resource.qrc"/>
+  <include location="../../../cnpm/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

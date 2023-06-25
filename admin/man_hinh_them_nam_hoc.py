@@ -1,0 +1,38 @@
+from admin.ui_man_hinh_them_nam_hoc import Ui_man_hinh_them_nam_hoc
+from PyQt6 import QtWidgets
+
+class Man_hinh_them_nam_hoc(QtWidgets.QWidget, Ui_man_hinh_them_nam_hoc):
+    def __init__(self, parent = None):
+        super().__init__()
+        self.setupUi(self)
+        self.par = parent
+        self.mycursor = parent.par.par.conn.cursor()
+        self.setFixedSize(400, 300)
+        self.thoat.clicked.connect(self.Thoat)
+        self.them.clicked.connect(self.Them)
+
+    def Thoat(self):
+        self.par.DatMacDinh()
+        self.close()
+
+    def Them(self):
+        msg = QtWidgets.QMessageBox(self)
+        msg.setWindowTitle("Thông báo")
+        ten_nam_hoc = self.ten_nam_hoc.text()
+        command = f"""select count(MaNamHoc)
+                    from NAMHOC
+                    where TenNamHoc = N'{ten_nam_hoc}'"""
+        
+        result = int(self.mycursor.execute(command).fetchall()[0][0])
+        if result == 0:
+            command = f"""insert into NAMHOC values(N'{ten_nam_hoc}')"""
+            self.mycursor.execute(command)
+            self.mycursor.commit()
+            self.ten_nam_hoc.clear()
+            msg.setInformativeText("Thêm năm học thành công")
+        else:
+            msg.setInformativeText("Tên năm học này đã có trong danh sách")
+        msg.show()
+
+    def DatMacDinh(self):
+        self.ten_nam_hoc.clear()
